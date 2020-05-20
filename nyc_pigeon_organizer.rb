@@ -5,8 +5,8 @@ def nyc_pigeon_organizer(data)
     value_list.to_a.each do |value, name_list|
       name_list.each do |name|
         data[name] = {} if data[name] == nil
-        data[name][attribute.to_s] = [] if data[name][attribute] == nil
-        data[name][attribute] << value
+        data[name][attribute.to_sym] = [] if data[name][attribute.to_sym] == nil
+        data[name][attribute.to_sym] << value.to_s
       end
     end
   end
