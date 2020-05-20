@@ -14,3 +14,4 @@ def nyc_pigeon_organizer(data)
 end
 
 # {:color => {:purple => ["Theo", "Peter Jr."]}}
+# nyc_pigeon_organizer(pigeon_data)
